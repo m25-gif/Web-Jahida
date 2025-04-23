@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box ;  lo aplica bootstrap*/
+  scroll-behavior: smooth;
+}
+
+/* h1{
+  font-size: 40px;
+}
+h2{
+  font-size: 32px;
+}
+h3{
+  font-size: 24px;
+} */
+h1 {
+  color: #917f6e !important;
+  color: hsl(25, 15%, 35%) !important;
+}
+
+h2,
+h3 {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  color: #917f6e !important;
+  color: hsl(25, 15%, 35%) !important;
+}
+
+p,
+li {
+  font-family: "Lato", sans-serif;
+  color: #917f6e;
+  color: hsl(25, 15%, 35%) !important;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+
+
+.navMenu {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #917F6E !important;
+  color: hsl(30, 25%, 35%) !important;
+background-color: #d9ddcd;
+padding: 12px;
+border-radius: 15px;
+transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+}
+
+
+
+.contacto {
+  background-color: #efd2be;
+  color: #917F6E !important;
+  color: hsl(20, 15%, 35%) !important;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+}
+
+nav ul li a:hover {
+
+  background-color: #efbc98;
+  /* Fondo oscuro al pasar el cursor */
+  color: #917f6e !important;
+  /* Cambia el color del texto al pasar el cursor */
+
+  transform: scale(1.05);
+  /* Efecto de expansión */
+}
+
+
+header{
+  background-color: #efe1d1 ;
+}
+
+header p{
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #917F6E !important;
+  color: hsl(10, 25%, 25%) !important; /* Más oscuro */
+
+  
+
+}
+
+
+
+/**PORTADA**/
+
+
+.imagen {
+  height: 310px;
+  background-image: url(../imagenes/medical-portada.jpg);
+  background-size: cover;
+  background-position:center; 
+  background-repeat: no-repeat;
+  /*Evita que se repita*/
+}
+
+#Portada{
+  background-color: #efe1d1 ;
+}
+
+.contacto {
+  background-color: #efd2be;
+  color: #917F6E !important;
+  color: hsl(25, 15%, 35%) !important;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s;
+}
+
+.contacto:hover {
+
+  background-color: #917F6E;
+  /* Fondo oscuro al pasar el cursor */
+  color: #efbc98 !important;
+  /* Cambia el color del texto al pasar el cursor */
+
+  transform: scale(1.05);
+  /* Efecto de expansión */
+}
+
+/* SOBRE MI */
+
+#SobreMi figure img {
+  object-fit: cover;
+  max-height: 360px;
+  height: 100%;
+}
+
+#SobreMi {
+  background-color:  #d9ddcd;
+}
+/* 
+  Quem Pode Consultar? */
+
+
+  #TipoCliente{
+    background-color: #efe1d1; /* Fondo suave y cálido */
+    padding: 50px 0; /* Espaciado arriba y abajo */
+  }
+
+
+  #TipoCliente .row {
+    margin-top: 30px;
+  }
+
+
+  #TipoCliente article {
+    background-color: #efd2be; /* Fondo claro para cada artículo */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #TipoCliente article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  #TipoCliente h3 {
+    font-weight: 600;
+  
+  }
+
+  
+  #TipoCliente p.lead {
+    font-size: 1.125rem; /* Aumento del tamaño de fuente para hacer el texto más legible */
+    color: #d9ddcd; /* Gris claro */
+    margin-bottom: 20px;
+  }
+
+  #TipoCliente ul li {
+    font-size: 1rem;
+    color: #917f6e; /* Color de los ítems de la lista */
+    margin-bottom: 12px;
+  }
+  
+  #TipoCliente .container {
+    max-width: 1200px;
+  }
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  
+  #TipoCliente .row{
+    margin: 20px;
+      }
+  #TipoCliente>article {
+    display: flex;
+    flex-direction: column;
+    /* Opcional: Cambiar a columnas en pantallas pequeñas */
+    text-align: center;
+  }
+
+  #TipoCliente article h3 {
+ height: fit-content;
+    text-align: center;
+  }
+
+  #TipoCliente article p {
+    height: fit-content;
+    /* Ajustar altura */
+    text-align: center;
+margin: 10px;
+  }
+
+  #TipoCliente article ul{
+    height: fit-content;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+  #TipoCliente .row{
+    margin: 20px;
+      }
+
+  #TipoCliente>article {
+    display: flex;
+    text-align: center;
+  }
+
+  #TipoCliente article h3 {
+    text-align: center;
+min-height: 65px;
+  }
+
+  #TipoCliente article p {
+  height: fit-content;
+    text-align: center;
+    /* margin: 0px 15px; */
+  }
+
+  #TipoCliente article ul{
+    height: fit-content;
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1173px) {
+  #TipoCliente .row{
+    margin: 20px;
+      }
+  
+  #TipoCliente article {
+    display: flex;
+    text-align: center;
+  }
+
+  #TipoCliente article h3 {
+    min-height: 105px;
+
+  }
+
+  #TipoCliente article p {
+    min-height: 108px;
+    text-align: center;
+  }
+  #TipoCliente article ul{
+    min-height: 336px;
+  }
+}
+
+@media (min-width: 1174px) and (max-width: 1199px) {
+
+  #TipoCliente .row{
+margin: 20px;
+  }
+  #TipoCliente article {
+    display: flex;
+    text-align: center;
+  }
+
+  #TipoCliente article h3 {
+    min-height: 134.38px;
+
+  }
+
+  #TipoCliente article p {
+    min-height: 108px;
+    text-align: center;
+  }
+
+  #TipoCliente article ul{
+    min-height: 288px;
+  }
+}
+
+
+@media (min-width:1200px) {
+  #TipoCliente article {
+    display: flex;
+    text-align: center;
+    height: fit-content;
+  }
+
+  #TipoCliente article h3 {
+       min-height: 154px;
+    
+  }
+
+  #TipoCliente article p {
+    min-height: 108px;
+    margin-top: 5px;
+  }
+  #TipoCliente article ul{
+    min-height: 240px;
+  }
+}
+
+
+#TipoCliente article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#TipoCliente article h3{
+  background-color: #efe1d1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/* DETALLES*/
+
+#Detalles{
+  background-color: #d9ddcd;
+}
+
+.cntr {
+  display: flex;
+  align-items: stretch;
+  /* Ensures all boxes grow to the same height */
+  flex-wrap: wrap;
+
+}
+
+.art {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.art p {
+  margin-bottom: 0px;
+}
+
+.art h3 {
+  word-wrap: break-word;
+
+}
+
+.cntr article{
+  border-radius: 15px;
+}
+
+.cntr article:first-child {
+  background-color: #efd2be;
+}
+
+.cntr article:nth-child(2) {
+  background-color: #efe1d1;
+}
+
+.cntr article:nth-child(3) {
+  background-color: #efd2be;
+}
+
+.cntr article:nth-child(4) {
+  background-color: #efe1d1;
+}
+
+
+
+@media (min-width:768px) {
+
+  /*Ajuste para efecto de cascada */
+  .cntr article:first-child {
+    margin-top: 0px;
+  
+  }
+
+  .cntr article:nth-child(2) {
+    margin-top: calc(5% + 10px);
+   
+  }
+
+  .cntr article:nth-child(3) {
+    margin-top: calc(10% + 20px);
+
+  }
+
+  .cntr article:nth-child(4) {
+    margin-top: calc(15% + 30px);
+  
+  }
+}
+
+
+/* CONTACTO */
+
+.presencialStyle{
+  margin:70px 0px !important;
+}
+
+.contact {
+  column-gap: 50px;
+}
+
+.wspIcono {
+  all: unset;
+  /* Elimina todos los estilos heredados */
+  display: inline-block;
+  /* Asegura que se comporte bien */
+  color: #25D366;
+}
+
+.igIcono {
+  text-decoration: none;
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+  /* Degradado de Instagram */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-wsp {
+  text-decoration: none;
+}
+
+.btn-ig {
+  text-decoration: none;
+}
+
+#Contacto{
+  background-color: #efe1d1;
+}
+
+.styleDiv{
+  max-width:700px !important;
+  border-style:double;
+border-color:#917f6e;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+#Contacto span{
+  font-family: "Lato", sans-serif;
+  color: #917f6e;
+  color: hsl(25, 15%, 35%) !important;
+}
+
+#Contacto span:hover{
+  opacity: 50%;
+}
+
+footer{
+  background-color: #d9ddcd;
+  min-height: 100px;
+}
+
+footer p{
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #917F6E !important;
+  color: hsl(10, 25%, 25%) !important; /* Más oscuro */
+}
